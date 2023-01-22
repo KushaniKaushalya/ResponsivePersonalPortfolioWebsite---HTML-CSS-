@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pos System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        .bg-primary {
+            background-color: #9E9E9E !important;
+            position: absolute;
+            left: 220px;
+            width: 1310px;
+        }
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+            background: darkslategrey;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: dodgerblue;
+        }
+
+        .col-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 15.666667%;
+            max-width: 16.666667%;
+            background: dodgerblue;
+
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: dodgerblue;
+            font-size: inherit;
+            left: 26px;
+            padding-left: 29px;
+            color: cornsilk;
+            text-underline-position: auto;
+            color: lightcoral;
+            padding-top: 16px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand">POS System</a>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row" >
+
+    <div class="col-2">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-white" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">WELCOME !!!</a>
+            <a class="nav-link  active text-dark" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link active text-white" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+            <a class="nav-link  active text-white" id="v-pills-userRegi-tab" data-toggle="pill" href="#v-pills-userRegi" role="tab" aria-controls="v-pills-userRegi" aria-selected="true">Users Registration</a>
+            <a class="nav-link  active text-white" id="v-pills-viewCustomers-tab" data-toggle="pill" href="#v-pills-viewCustomers" role="tab" aria-controls="v-pills-viewCustomers" aria-selected="true"> view Customers</a>
+            <a class="nav-link  active text-white" id="v-pills-customerRegi-tab" data-toggle="pill" href="#v-pills-customerRegi" role="tab" aria-controls="v-pills-customerRegi" aria-selected="true">  Customer Registration</a>
+            <a class="nav-link  active text-white" id="v-pills-viewProducts-tab" data-toggle="pill" href="#v-pills-viewProducts" role="tab" aria-controls="v-pills-viewProducts" aria-selected="true">View Products</a>
+            <a class="nav-link  active text-white" id="v-pills-RegisterProducts-tab" data-toggle="pill" href="#v-pills-RegisterProducts" role="tab" aria-controls="v-pills-RegisterProducts" aria-selected="true">Register Products</a>
+            <a class="nav-link  active text-white" id="v-pills-placeSale-tab" data-toggle="pill" href="#v-pills-placeSale" role="tab" aria-controls="v-pills-placeSale" aria-selected="true">Place Sale</a>
+            <a class="nav-link  active text-white" id="v-pills-viewSales-tab" data-toggle="pill" href="#v-pills-viewSales" role="tab" aria-controls="v-pills-viewSales" aria-selected="true">View Sales</a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+            <a class="nav-link  active text-dark"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="col-9">
+
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-userRegi" role="tabpanel" aria-labelledby="v-pills-userRegi-tab">abc</div>
+            <div class="tab-pane fade" id="v-pills-viewCustomers" role="tabpanel" aria-labelledby="v-pills-viewCustomers-tab">ds</div>
+            <div class="tab-pane fade" id="v-pills-viewProducts" role="tabpanel" aria-labelledby="v-pills-viewProducts-tab">rgf</div>
+            <div class="tab-pane fade" id="v-pills-placeSale" role="tabpanel" aria-labelledby="v-pills-placeSale-tab">fjfjkj</div>
+            <div class="tab-pane fade" id="v-pills-viewSales" role="tabpanel" aria-labelledby="v-pills-viewSales-tab">vkvk</div>
+            <div class="tab-pane fade" id="v-pills-customerRegi" role="tabpanel" aria-labelledby="v-pills-customerRegi-tab">3io</div>
+            <div class="tab-pane fade" id="v-pills-RegisterProducts" role="tabpanel" aria-labelledby="v-pills-RegisterProducts-tab">vmvnmd</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

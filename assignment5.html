@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transitions Navigation</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="assests/font-awsome/css/all.min.css">
+    <style>
+        nav {
+            position: relative;
+            top: 50px;
+            right: 230px;
+            height: 600px;
+            width: 300px;
+            /*border: 1px solid black;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        nav > div {
+            height: 60px;
+            width: 290px;
+            /* border: 1px solid red; */
+            background-color: blueviolet;
+            box-shadow: 1px 4px 7px 2px #424c6b;
+            transition: all 2s;
+        }
+
+        nav > div:hover {
+            margin-left: 230px;
+            transition: all 2s;
+        }
+
+        div>h1{
+            color: white;
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        div{
+            position: relative;
+        }
+
+        div>i{
+            position: absolute;
+            right: 0;
+            color: white;
+            font-size: 37px;
+            top: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div><h1>Menu One</h1><i class="fas fa-address-book"></i></div>
+    <div><h1>Menu Two</h1><i class="fas fa-ambulance"></i></div>
+    <div><h1>Menu Three</h1><i class="fas fa-atlas"></i></div>
+    <div><h1>Menu Four</h1><i class="fab fa-buffer"></i></div>
+    <div><h1>Menu Five</h1><i class="fas fa-cart-arrow-down"></i></div>
+
+</nav>
+</body>
+</html>

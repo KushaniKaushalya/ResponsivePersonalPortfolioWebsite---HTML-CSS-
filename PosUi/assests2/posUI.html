@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pos System</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+<nav id="navbar-example2" class="navbar navbar-dark bg-warning">
+    <a class="navbar-brand"  href="#">Grocery Shop</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item" >
+            <a class="nav-link"  href="#Home">Home</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link"  href="#PlaceSale">Place Sale</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#ProductManage">Product Manage</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Customer Manage</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item"  href="#CustomerManage">Customer Manage</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#ViewCustomers">View Customers</a>
+            </div>
+        </li>
+
+    </ul>
+</nav>
+
+
+
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <h4 id="CustomerNanage">Customer Manage</h4>
+
+
+    <main class="container-fluid">
+        <section class="row mt-4">
+            <div class="col-12 col-md-4">
+                <form action="">
+                    <div class="form-group">
+                        <label for="cusID">Customer ID</label>
+                        <input class="form-control" id="cusID" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="cusName">Customer Name</label>
+                        <input class="form-control" id="cusName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="cusAddress">Customer Address</label>
+                        <input class="form-control" id="cusAddress" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="cusSalary">Customer Salary</label>
+                        <input class="form-control" id="cusSalary" type="text">
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-info">Update</button>
+                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-warning">Clear</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <h4 id="ViewCustomers">View Customers</h4>
+
+
+    <div class="col-12 col-md-8">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-danger text-white">
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Customer Address</th>
+                <th>Customer Salary</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>C001</td>
+                <td>Kasun</td>
+                <td>Panadura</td>
+                <td>100000.00</td>
+            </tr>
+            <tr>
+                <td>C001</td>
+                <td>Kasun</td>
+                <td>Panadura</td>
+                <td>100000.00</td>
+            </tr>
+            <tr>
+                <td>C001</td>
+                <td>Kasun</td>
+                <td>Panadura</td>
+                <td>100000.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h4 id="Home">Place Sale</h4>
+    <div class="col-12 col-md-4">
+
+
+
+
+    <h4 id="PlaceSale">Place Sale</h4>
+
+
+    <div class="col-12 col-md-4">
+        <form action="">
+            <div class="form-group">
+                <label for="SaleID">Sale ID</label>
+                <input class="form-control" id="SaleID" type="text">
+            </div>
+            <div class="form-group">
+                <label for="CustID">Customer ID</label>
+                <input class="form-control" id="CustID" type="text">
+            </div>
+            <div class="form-group">
+                <label for="ItemCode">Item Code</label>
+                <input class="form-control" id="ItemCode" type="text">
+            </div>
+            <div class="form-group">
+                <label for="CustName">Customer Name</label>
+                <input class="form-control" id="CustName" type="text">
+            </div>
+            <div class="form-group">
+                <label for="ItemName">Item Name</label>
+                <input class="form-control" id="I
+                temName" type="text">
+            </div>
+            <div class="form-group">
+                <label for="UnitPrice">Unit Price</label>
+                <input class="form-control" id="UnitPrice" type="text">
+            </div>
+            <div class="form-group">
+                <label for="Qty">Qty</label>
+                <input class="form-control" id="Qty" type="text">
+            </div>
+            <div class="form-group">
+                <label for="Discount">Discount</label>
+                <input class="form-control" id="Discount" type="text">
+            </div>
+            <div class="form-group">
+                <label for="SaleAmount">SaleAmount</label>
+                <input class="form-control" id="SaleAmount" type="text">
+            </div>
+
+
+
+
+            <div class="col-12 col-md-8">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-success text-white">
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="col-12 col-md-8">
+            <div class="form-group">
+                <label for="NetAmount">Net Amount</label>
+                <input class="form-control" id="NetAmount" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="Payed">Payed</label>
+                <input class="form-control" id="Payed" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="Balance">SaleAmount</label>
+                <input class="form-control" id="Balance" type="text">
+            </div>
+            </div>
+
+
+
+
+
+
+            <div class="btn-group">
+                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-warning">Print Bill</button>
+                <button class="btn btn-danger">Clear Cart</button>
+
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <h4 id="ProductManage">Product Manage</h4>
+
+    <section class="row mt-4">
+        <div class="col-12 col-md-4">
+            <form action="">
+                <div class="form-group">
+    <div class="form-group">
+        <label for="ItmCode">ItemCode</label>
+        <input class="form-control" id="ItmCode" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="ItmName">ItemName</label>
+        <input class="form-control" id="ItmName" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="UniPrice">Unit Price</label>
+        <input class="form-control" id="UniPrice" type="text">
+    </div>
+    <div class="form-group">
+        <label for="PurchaseQty">Purchase Qty</label>
+        <input class="form-control" id="PurchaseQty" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="PurchaseDiscount">Purchase Discount</label>
+        <input class="form-control" id="PurchaseDiscount" type="text">
+    </div>
+
+
+    <div class="form-group">
+        <label for="Discription">Discription</label>
+        <input class="form-control" id="Discription" type="text">
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-primary">Register Item</button>
+        <button class="btn btn-warning">Update Item</button>
+        <button class="btn btn-danger">Clear</button>
+
+    </div>
+            </form>
+        </div>
+
+    </section>
+
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

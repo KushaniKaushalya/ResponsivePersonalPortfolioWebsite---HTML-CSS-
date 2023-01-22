@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KayFrame</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        div{
+            height: 90px;
+            width: 200px;
+            background: #00188b;
+            /*border: 1px solid black;*/
+            border-radius: 20px;
+            animation-name: myAnimation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+          /*  animation-direction:normal;*/
+
+        }
+
+        @keyframes myAnimation {
+            0%{
+                background: #00188b;
+                margin: 0 0 0 0px;
+
+
+            }
+            25%{
+                background: gold;
+                margin:0 0 0 600px;
+
+
+            }
+            50%{
+                background: red;
+                margin:300px 0 0 600px;
+
+            }
+            75%{
+                background: #ff253a;
+                margin:300px 0 0 0;
+            }
+            100%{
+                background: gold;
+                margin:0 0 0 0;
+            }
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+<div></div>
+</body>
+</html>
